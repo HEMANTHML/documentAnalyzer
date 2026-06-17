@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+    http://www.liquibase.org/xml/ns/dbchangelog
+    https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!-- Document metadata table -->
+    <changeSet id="1-create-document-table" author="HemanthOduri">
+        <createTable tableName="document">
+            <column name="id" type="UUID">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="file_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="original_name" type="VARCHAR(255)"/>
+            <column name="file_size" type="BIGINT"/>
+            <column name="page_count" type="INT"/>
+            <column name="status" type="VARCHAR(50)" defaultValue="PROCESSING"/>
+            <column name="uploaded_at" type="TIMESTAMP"
+                    defaultValueComputed="CURRENT_TIMESTAMP"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

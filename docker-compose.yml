@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+
+  # PostgreSQL with PGVector extension
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: documentAnalyser-postgres
+    environment:
+      POSTGRES_DB: document_analyser_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Ollama — local LLM server
+  ollama:
+    image: ollama/ollama
+    container_name: docmind-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+volumes:
+  pgdata:
+  ollama_data:

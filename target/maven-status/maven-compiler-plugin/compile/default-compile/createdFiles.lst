@@ -1,0 +1,14 @@
+com\main\DocumentAnalyser\dao\response\ChatResponse.class
+com\main\DocumentAnalyser\service\ChatService.class
+com\main\DocumentAnalyser\resource\ChatResource.class
+com\main\DocumentAnalyser\dao\request\ChatRequest.class
+com\main\DocumentAnalyser\entity\Document$DocumentBuilder.class
+com\main\DocumentAnalyser\GlobalExceptionHandler.class
+com\main\DocumentAnalyser\service\DocumentService.class
+com\main\DocumentAnalyser\entity\Document.class
+com\main\DocumentAnalyser\dao\response\DocumentResponse.class
+com\main\DocumentAnalyser\dao\response\ChatResponse$ChatResponseBuilder.class
+com\main\DocumentAnalyser\dao\response\DocumentResponse$DocumentResponseBuilder.class
+com\main\DocumentAnalyser\DocumentAnalyserApplication.class
+com\main\DocumentAnalyser\resource\DocumentResource.class
+com\main\DocumentAnalyser\repository\DocumentRepository.class
