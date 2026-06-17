@@ -1,0 +1,17 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Maven
+target/
+
+# Node
+documentanalyser-ui/node_modules/
+documentanalyser-ui/dist/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
