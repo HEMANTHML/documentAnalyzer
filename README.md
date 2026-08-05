@@ -172,4 +172,11 @@ Spring's official AI integration framework. Auto-configures `ChatModel`, `Embedd
 
 ---
 
-## License
+## Author and Licensing
+
+* **Lead Engineer:** Hemanth Oduri (odurihemanth@gmail.com)
+* **Copyright:** Copyright (c) 2026. All rights reserved.
+
+```
+***
+```
